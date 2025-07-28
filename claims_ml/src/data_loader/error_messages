@@ -1,0 +1,10 @@
+from enum import Enum
+
+class ErrorMessages(Enum):
+    INVALID_FILE_PATH_TYPE = "Invalid file path type: {type}. Expected str or Path."
+    FILE_NOT_FOUND = "File '{file}' does not exist in the given path: {path}."
+    EMPTY_DATA_FILE = "Error loading data: File is empty."
+    PARSER_ERROR = "Error loading data: Error parsing file."
+    UNSUPPORTED_FILE_EXTENSION = "Unsupported file extension: '{ext}'. Only .csv files are allowed."
+    UNEXPECTED_ERROR = "An unexpected error occurred while loading data: {error}"
+    
